@@ -1,7 +1,7 @@
 # Decode_solidity_function
 从静态solidity合约中提取所有的方法,现在一半都是通过AST工具去提取合约中具有的方法，现在提供一种从静态文本去识别合约方法的脚本
 例子：
-'''
+```
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
@@ -2031,10 +2031,10 @@ contract MicroNFTProxyV2 is Micro3, ReentrancyGuard, MicroUtilityV4 {
         owner = newOwner;
     }
 }
-'''
+```
 
 识别的结果：
-'''
+```
 function _msgSender() internal view virtual returns (address) 
 function _msgData() internal view virtual returns (bytes calldata) 
 function verify( bytes32[] memory proof, bytes32 root, bytes32 leaf ) internal pure returns (bool) 
@@ -2123,4 +2123,4 @@ function _payoutFundingRaise(uint256 totalPurchase) internal returns (bool)
 function _isMinting(address toAddress, uint256 payableValue, uint256 totalFee, uint256 quantity) internal 
 function _setBaseURI(string memory _newURI) internal 
 function _setOwner(address newOwner) internal 
-'''
+```
