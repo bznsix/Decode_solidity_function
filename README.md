@@ -1,5 +1,6 @@
 # Decode_solidity_function
 从静态solidity合约中提取所有的方法,现在一半都是通过AST工具去提取合约中具有的方法，现在提供一种从静态文本去识别合约方法的脚本
+在Util.py中提供了更加详尽的方法，包含function  visable  parameter等,同时可以将采集到方法保存到数据库中
 例子：
 ```
 // SPDX-License-Identifier: MIT
